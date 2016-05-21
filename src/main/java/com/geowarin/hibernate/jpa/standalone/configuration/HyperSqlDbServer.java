@@ -19,8 +19,8 @@ public class HyperSqlDbServer implements SmartLifecycle {
     public HyperSqlDbServer() {
 
         Properties properties = new Properties();
-        properties.setProperty("server.port", "63535");
-        properties.setProperty("server.database.0", "file:d:/hsqldb/testdb");
+        properties.setProperty("server.port", "33555");
+        properties.setProperty("server.database.0", "file:d:/hsqldb/standalone-test");
         properties.setProperty("server.dbname.0", "testdb");
         properties.setProperty("server.remote_open", "true");
         properties.setProperty("server.silent", "true");
