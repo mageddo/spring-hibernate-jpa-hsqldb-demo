@@ -1,0 +1,1 @@
+INSERT INTO cars (id, model) VALUES (1, 'COROLLA'), (2, 'CIVIC');
