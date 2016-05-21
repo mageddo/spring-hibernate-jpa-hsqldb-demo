@@ -1,11 +1,15 @@
 package com.geowarin.hibernate.jpa.standalone;
 
+import java.util.List;
+
+import javax.persistence.EntityManager;
 
 import com.geowarin.hibernate.jpa.standalone.model.User;
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.util.List;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
  * 
@@ -13,7 +17,12 @@ import java.util.List;
  * @author Geoffroy Warin (https://github.com/geowarin)
  *
  */
-public class AppTest extends AbstractDbUnitJpaTest {
+@CustomContextConfiguration
+@RunWith(SpringJUnit4ClassRunner.class)
+public class AppTest {
+
+	@Autowired
+	EntityManager entityManager;
 
 	@Test
 	public void testFind() {
@@ -48,9 +57,4 @@ public class AppTest extends AbstractDbUnitJpaTest {
 		Assert.assertEquals(2, allUsers.size());
 	}
 
-	@Test
-	public void testFindJoinCarAndUser(){
-		entityManager.getCriteriaBuilder().en
-
-	}
 }

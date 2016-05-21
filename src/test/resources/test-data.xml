@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dataset>
-	<USERS id="1" CAR_ID="1" name="userTest" />
-	<USERS id="2" CAR_ID="2" name="userTest2" />
-	<CARS id="1" MODEL="COROLLA" />
-	<CARS id="2" MODEL="CIVIC" />
-</dataset>

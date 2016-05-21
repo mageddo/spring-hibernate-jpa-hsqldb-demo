@@ -2,7 +2,7 @@
   
     <persistence-unit name="persistence-test" transaction-type="RESOURCE_LOCAL">
 
-		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<class>com.geowarin.hibernate.jpa.standalone.model.User</class>
 		<class>com.geowarin.hibernate.jpa.standalone.model.Car</class>
 
